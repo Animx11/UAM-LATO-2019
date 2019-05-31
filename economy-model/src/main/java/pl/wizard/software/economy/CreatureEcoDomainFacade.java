@@ -12,7 +12,7 @@ public class CreatureEcoDomainFacade {
 
     }
 
-    public CreatureEcoDomainAbstractFactory CreatureFactory(String aFractionName){
+    public CreatureEcoDomainAbstractFactory getCreatureFactory(String aFractionName){
         if(aFractionName.equals(CODE)){
             return new CodeCreatureEcoDomainFactory();
         }else if(aFractionName.equals(DATABASE)){

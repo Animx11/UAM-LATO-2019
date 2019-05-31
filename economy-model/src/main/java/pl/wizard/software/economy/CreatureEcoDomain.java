@@ -29,4 +29,8 @@ public class CreatureEcoDomain {
         speed = aEntity.getSpeed();
         goldCost = aEntity.getGoldCost();
     }
+
+    public String getName() {
+        return name;
+    }
 }
