@@ -13,6 +13,7 @@
         <module>battle-model</module>
         <module>battle-gui</module>
         <module>database-connector</module>
+        <module>economy-gui</module>
     </modules>
 
     <properties>
