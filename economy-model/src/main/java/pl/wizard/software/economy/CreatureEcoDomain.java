@@ -12,6 +12,15 @@ public class CreatureEcoDomain {
     private int speed;
     private int goldCost;
 
+    CreatureEcoDomain(String aName, int aMaxHp, Range<Integer> aAttack, int aDefence, int aSpeed, int aGoldCost) {
+        name = aName;
+        maxHp = aMaxHp;
+        attack = aAttack;
+        defence = aDefence;
+        speed = aSpeed;
+        goldCost = aGoldCost;
+    }
+
     CreatureEcoDomain(CreatureEntity aEntity) {
         name = aEntity.getName();
         maxHp = aEntity.getMaxHp();
