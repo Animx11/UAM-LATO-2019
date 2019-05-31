@@ -14,6 +14,7 @@
         <module>battle-gui</module>
         <module>database-connector</module>
         <module>economy-gui</module>
+        <module>economy-model</module>
     </modules>
 
     <properties>
