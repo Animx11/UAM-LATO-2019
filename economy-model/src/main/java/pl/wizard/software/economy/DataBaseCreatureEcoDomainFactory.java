@@ -33,7 +33,7 @@ class DataBaseCreatureEcoDomainFactory extends CreatureEcoDomainAbstractFactory 
     private CreatureEcoDomain createCreature(int aLevel) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("heroes-demo");
         EntityManager em = emf.createEntityManager();
-        TypedQuery<CreatureEntity> query = em.createQuery("select c from FractionEntity f join fetch CreatureEntity c where f.name = 'F1' AND c.level=:lvl", CreatureEntity.class);
+        TypedQuery<CreatureEntity> query = em.createQuery("select c from CreatureEntity c join fetch c.fractions f where f.name='F1' AND c.level=:lvl", CreatureEntity.class);
         query.setParameter("lvl",aLevel);
         CreatureEntity ent = query.getSingleResult();
         em.close();

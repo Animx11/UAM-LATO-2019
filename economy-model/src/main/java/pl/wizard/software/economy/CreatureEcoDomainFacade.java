@@ -21,7 +21,7 @@ public class CreatureEcoDomainFacade {
         throw new IllegalArgumentException("You used not supported fraction!");
     }
 
-    public Set<String> getFractionsName(){
+    public Set<String> getFractionNames(){
         Set ret = new HashSet<String>();
         ret.add(CODE);
         ret.add(DATABASE);

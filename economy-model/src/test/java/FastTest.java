@@ -17,4 +17,14 @@ class FastTest {
         assertEquals("Code_L1", c.getName());
     }
 
+    @Test
+    void fastDatabaseTest(){
+        CreatureEcoDomainFacade facade = new CreatureEcoDomainFacade();
+        CreatureEcoDomainAbstractFactory factory = facade.getCreatureFactory(CreatureEcoDomainFacade.DATABASE);
+
+        CreatureEcoDomain c = factory.createLevel1Creature();
+
+        assertEquals("Level1", c.getName());
+    }
+
 }
