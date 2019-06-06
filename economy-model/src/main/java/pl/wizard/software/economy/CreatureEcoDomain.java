@@ -33,4 +33,8 @@ public class CreatureEcoDomain {
     public String getName() {
         return name;
     }
+
+    public int getGoldCost() {
+        return goldCost;
+    }
 }
