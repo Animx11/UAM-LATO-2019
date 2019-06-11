@@ -39,6 +39,7 @@ public class MainController {
             combo.setItems(FXCollections.observableArrayList(aFractionNames));
             combo.getSelectionModel().selectedItemProperty().
                     addListener((aObs, aOld, aNew) -> {
+                        playerMap.get(combo).getChildren().clear();
                         CreatureEcoDomainAbstractFactory factory = facade.getCreatureFactory(aNew);
                         playerMap.get(combo).getChildren().add(new CreatureToBuyWidget(factory.createLevel1Creature()));
                         playerMap.get(combo).getChildren().add(new CreatureToBuyWidget(factory.createLeve12Creature()));
